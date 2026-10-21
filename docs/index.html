@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CarBridgePad</title>
+<meta name="description" content="Game controllers that keep working on CarPlay.">
+<style>
+:root{--bg:#f2f2f7;--card:#fff;--text:#1c1c1e;--muted:#6e6e73;--line:#e5e5ea;--accent:#0a84ff;--accent-text:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#000;--card:#1c1c1e;--text:#f2f2f7;--muted:#98989f;--line:#2c2c2e;--accent:#0a84ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:680px;margin:0 auto;padding:24px 16px 48px}
+header{display:flex;gap:16px;align-items:center;margin-bottom:20px}
+.icon{width:72px;height:72px;border-radius:17px;flex:none;display:grid;place-items:center;background:linear-gradient(145deg,var(--c1),var(--c2));box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.icon svg{width:40px;height:40px}
+h1{font-size:26px;margin:0;line-height:1.15}
+.tagline{color:var(--muted);margin:4px 0 0}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 20px}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;font-weight:600;text-decoration:none;background:var(--accent);color:var(--accent-text)}
+.btn.secondary{background:var(--card);color:var(--accent);border:1px solid var(--line)}
+section{background:var(--card);border-radius:14px;padding:16px 18px;margin:0 0 16px}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:0 0 10px;font-weight:600}
+p{margin:0 0 10px}p:last-child{margin:0}
+ul{margin:0;padding-left:20px}li{margin:4px 0}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
+dt,dd{padding:9px 0;border-bottom:1px solid var(--line);margin:0}
+dt{color:var(--muted);padding-right:16px}dd{text-align:right}
+dl>:nth-last-child(-n+2){border-bottom:0}
+code{font:14px ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--bg);padding:1px 5px;border-radius:5px;overflow-wrap:anywhere}
+.lang{color:var(--muted);font-size:14px;text-align:center;margin-top:28px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main style="--c1:#5e5ce6;--c2:#0a84ff">
+<header>
+<div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4M8 9v4"/><path d="M15 12h.01M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.98 3.59l-.9 7.6A2.5 2.5 0 0 0 4.28 19c.86 0 1.64-.44 2.1-1.17L7.5 16h9l1.12 1.83c.46.73 1.24 1.17 2.1 1.17a2.5 2.5 0 0 0 2.48-2.81l-.9-7.6A4 4 0 0 0 17.32 5Z"/></svg></div>
+<div><h1>CarBridgePad</h1><p class="tagline">Game controllers that keep working on CarPlay.</p></div>
+</header>
+<div class="actions">
+<a class="btn" href="https://github.com/adrielmendes28/CarBridgePad/releases/latest">Download .deb</a>
+<a class="btn secondary" href="https://github.com/adrielmendes28/CarBridgePad">Source code</a>
+</div>
+<section><h2>Description</h2><p>When CarBridge shows a game on the car screen, iOS treats the game as if it were in the background, so your controller stops working on CarPlay. CarBridgePad lets installed games keep receiving controller input (DualSense, Xbox, MFi) while they run on CarPlay.</p></section>
+<section><h2>How to use</h2><ul><li>Install, then force-quit the game and open it again.</li><li>Open the game on CarPlay through CarBridge and play with your controller.</li><li>There are no settings.</li></ul></section>
+<section><h2>Notes</h2><ul><li><strong>Keep the iPhone unlocked.</strong> With the iPhone locked, iOS stops delivering controller input.</li><li>Input lag comes mostly from the CarPlay stream and Bluetooth. Wired CarPlay and a cool iPhone help.</li><li>Tested with GTA: San Andreas and a DualSense. Other games that use Apple's GameController framework should work.</li></ul></section>
+<section><h2>Information</h2><dl><dt>Version</dt><dd>1.0.0</dd><dt>Author</dt><dd><a href="https://github.com/adrielmendes28">adrielmendes28</a></dd><dt>Requires</dt><dd>CarBridge</dd><dt>Tested on</dt><dd>iPhone X &middot; iOS 16.7.3</dd><dt>Jailbreak</dt><dd>rootless (arm64) &amp; rootful (arm)</dd><dt>Price</dt><dd>Free</dd></dl></section>
+<section><h2>Changelog</h2><p><strong>1.0.0</strong> &middot; First public release.</p></section>
+<section lang="pt-BR"><h2>Português</h2><p>Mantém o controle (DualSense, Xbox, MFi) funcionando nos jogos transmitidos para o CarPlay pelo CarBridge. Instale, feche o jogo à força e abra de novo. <strong>O iPhone precisa ficar desbloqueado.</strong></p></section>
+<p class="lang">MIT License &middot; Not affiliated with CarBridge or Apple.</p>
+</main>
+</body>
+</html>

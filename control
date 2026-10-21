@@ -1,0 +1,11 @@
+Package: com.adriel.carbridgepad
+Name: CarBridgePad
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Keeps game controllers (DualSense, Xbox, MFi) working in games streamed to CarPlay with CarBridge.
+Maintainer: adrielmendes28
+Author: adrielmendes28
+Section: Tweaks
+Depends: mobilesubstrate
+Depiction: https://adrielmendes28.github.io/CarBridgePad/
+Homepage: https://github.com/adrielmendes28/CarBridgePad
